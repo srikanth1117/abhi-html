@@ -25,7 +25,7 @@ SECRET_KEY = 'x4_a_cfs7e1o9o8^yk#2(5o$^a_g*9_r*w19wh9(85%4gk7w86'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -144,6 +144,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'ar401836@gmail.com'
 EMAIL_HOST_PASSWORD = 'zxcvbnm321A'
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
