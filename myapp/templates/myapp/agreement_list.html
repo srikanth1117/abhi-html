@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    {% for list in agreement_list %}
+      {{list.company_name}}
+      {{list.business_type}}
+      <a href="{{list.id}}">{{list.gst_no}}</a>
+
+    {% endfor %}
+
+  </body>
+</html>

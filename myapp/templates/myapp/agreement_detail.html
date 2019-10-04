@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <div class="" style="display:inline-block;">
+        <div style="text-align:center;margin-bottom:5px;" >
+          <img src="{% static 'images/manvi.png' %}" height="70px" width="auto" alt="">
+        </div>
+
+        <div style="text-align:center;float:right;">
+          <span style="font-weight:bold;font-size:15px;text-align:center">MANVI HR CAREERS PRIVATE LIMITED</span><br>
+          <span style="font-weight: bolder;font-size:12px;">Shop No. 319,Block-A,Third Floor, Chenoy,Trade Center, Parklane, Secunderabad - 500003.</span><br>
+          <span style="font-weight:bold;font-size:12px;">CIN No: U74910TG2019PTC133060</span>
+        </div>
+      </div>
+      <hr>
+      <h4 class="text-underline" style="text-align:center;text-decoration:underline;font-size:15px;">CONSULTANCY AGREEMENT</h4>
+      <div class="" style="font-size:13px;line-height:24px;">
+          THIS AGREEMENT made on {{agreement.agreement_date|date:"D M Y"}} day of July 2019 between {{agreement.company_name}}, carrying on business in the firm
+
+        name and style of {{company.company_name}}, a Company incorporated under the Companies, having registered office at <br> D.No.{{agreement.address}} Hyderabad.  which expression shall unless it be repugnant to the context or
+        meaning thereof mean and include its successors and assigns (hereinafter referred to as ‘the Company’) of the ONE PART and SECOND PART <b>M/S Manvi HR Careers</b>, carrying on business in the firm name and style of <b>M/S Manvi HR Careers Pvt Ltd</b> as <br>
+        Organization thereof, having his registered office at 319,A Block, Chenoy Trade Center, Park Lane, Hyderabad - 500003, hereinafter referred to as ‘the Consultant’ (which expression shall, unless it be repugnant to the context or meaning thereof, be deemed to mean and include
+        his heirs, executors, administrators and legal representatives and permitted assigns) of  the OTHER PART:
+        WHEREAS the Company is engaged in the business of {{agreement.business_type}} and whereas, the Consultant is in the business of providing recruitment services to organizations.<br>
+   
+        Whereas, the Company requires competent candidates for all processes of the Company and the Consultant agrees to provide its services in recruitment of such candidates.<br><br>
+   
+        Now, in witness thereof the parties here to agree on the following terms:<br><br>
+   
+        1. This contract shall be valid for the period of one year from  {{agreement.agreement_date}} to -{{agreement.agreement_valid_upto}} unless terminated by the Company with thirty (30) days prior written notice. The Company may, at its sole discretion, extend the terms of this agreement for the desired period and on terms and conditions as mutually agreed upon by the Company and the Consultant.<br><br>
+
+        2. The scope of services will include the following
+        <p></p>
+        a. Communicating the job profile to the candidate.<br>
+        b. Coordinating with both the candidate and the concerned representative of the Company for scheduling the interviews.<br>
+        c. Expectation settings of the candidates.<br>
+        d. All correspondence with the candidates including interview scheduling and intimation of the selection outcome will be the responsibility of the consultant <br><br>
+   
+        3. The consultant will charge the fees as per the number of candidate provided by the Consultant and selected by the company. The charges are 8.33% on CTC of the selected candidates. <br>
+
+         The above mentioned rates are exclusive of Service Tax as imposed by the Govt. <br>
+
+        4. Upon the selection decision, the Company will inform the candidates of the selection through the consultant.        After the candidate accepts the Company’s offer, the consultant will be informed of the Gross Annual Emoluments offered to the candidate, for billing purposes by the company HR;<br>
+        <hr>
+        www.manvicareers.com <br>
+
+        <div class="" style="display:inline-block;">
+          <div style="text-align:center;margin-bottom:5px;" >
+            <img src="{% static 'images/manvi.png' %}" height="70px" width="auto" alt="">
+          </div>
+
+          <div style="text-align:center;float:right;">
+            <span style="font-weight:bold;font-size:15px;text-align:center">MANVI HR CAREERS PRIVATE LIMITED</span><br>
+            <span style="font-weight: bolder;">Shop No. 319,Block-A,Third Floor, Chenoy,Trade Center, Parklane, Secunderabad - 500003.</span><br>
+            <span style="font-weight:bold;font-size:12px;">CIN No: U74910TG2019PTC133060</span>
+          </div>
+        </div>
+        <hr>
+        5. The Consultant will raise the invoice for the candidates who have completed 30 days with the Company.<br><br>
+
+         The payment will be made by the company within 7 days of receipt of invoice.<br><br>
+   
+         The Consultant will provide the replacement of the candidate if candidate leaves the job with-in 60 days of joining at his/her own wish for all the Positions. The replacement will be provided within 2 months without any charges. <b>(One time Replacement only)</b>.
+   
+   
+         The free replacement clause will not apply if the service of the candidate is being terminated by the company.<br><br>
+   
+         All position related information such as job description; compensation etc. from the Company shall be treated with total confidentiality by the Consultant.
+   
+         The Consultant will be entitled to provide the Services remotely from its own premises and will not be required to attend the Company's premises.<br><br><br>
+   
+   
+   
+   
+         IN WITNESS WHEREOF the parties hereto have hereunto set their hands the day and year first above written.<br><br>
+
+
+         <p>From  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    From</p>
+         <p>{{argreement.company_name}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Manvi HR Careers Pvt Ltd. </p>
+         <p><img src="{{agreement.image.url}}" height="60" alt="not found"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Manvi HR Careers Pvt Ltd.</p>
+         <p>Authorized Signatory &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Authorized Signatory</p><br><br><br><br><br><br><br><br><br>
+         <hr>
+        www.manvicareers.com
+      </div>
+  </body>
+</html>
